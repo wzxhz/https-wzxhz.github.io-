@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>王者小盒子官网 · 每一次探索，都更简单</title>
+  <meta name="description" content="王者小盒子官方网站 —— 每一次探索，都更简单。提供官方下载与官方团队介绍。" />
+  <meta name="keywords" content="王者小盒子,王者小盒子官网,王者小盒子下载" />
+  <meta name="theme-color" content="#2563EB" />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/DHnBmgd4/0d5c975a-d245-4ed0-9360-7ddbd00c39f6.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="王者小盒子官网" />
+  <meta property="og:description" content="每一次探索，都更简单" />
+  <meta property="og:image" content="https://i.ibb.co/DHnBmgd4/0d5c975a-d245-4ed0-9360-7ddbd00c39f6.png" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB', 
+            primaryDark: '#1D4ED8',
+            bgLight: '#F8FAFC',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .glass-nav { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #CBD5E1; }
+    .no-scroll { overflow: hidden; }
+  </style>
+</head>
+<body class="bg-bgLight text-slate-800 antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary">
+
+  <!-- ===== 顶部导航 ===== -->
+  <header class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a class="flex items-center gap-3 text-xl font-bold tracking-tight text-slate-900 hover:opacity-80 transition-opacity" href="#home">
+        <img src="https://i.ibb.co/DHnBmgd4/0d5c975a-d245-4ed0-9360-7ddbd00c39f6.png" alt="王者小盒子" class="w-8 h-8 object-contain hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'" />
+        <span>王者小盒子</span>
+      </a>
+      <ul class="hidden md:flex gap-10 font-medium text-slate-500 text-sm tracking-wide">
+        <li><a href="#home" class="hover:text-primary transition-colors duration-200">首页</a></li>
+        <li><a href="#team" class="hover:text-primary transition-colors duration-200">官方团队</a></li>
+        <li><a href="#download" class="hover:text-primary transition-colors duration-200">官方下载</a></li>
+      </ul>
+      <a class="bg-slate-900 hover:bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium tracking-wide shadow-[0_4px_14px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 transition-all duration-300" href="https://share.feijipan.com/s/ClvcwLwt" target="_blank" rel="noopener">
+        立即下载
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 首屏 Hero ===== -->
+    <section id="home" class="relative pt-48 pb-24 px-6 max-w-7xl mx-auto text-center">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+      <div class="reveal">
+        <span class="inline-block text-primary font-semibold tracking-widest text-sm uppercase mb-6">王者小盒子 · 官方网站</span>
+      </div>
+      <div class="reveal flex justify-center mb-8">
+        <div class="h-24 flex items-center justify-center">
+          <img src="https://i.ibb.co/DHnBmgd4/0d5c975a-d245-4ed0-9360-7ddbd00c39f6.png" alt="王者小盒子" class="max-h-full max-w-[200px] object-contain hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'" />
+        </div>
+      </div>
+      <h1 class="reveal text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 text-slate-900">王者小盒子</h1>
+      <p class="reveal text-xl md:text-2xl text-slate-400 mb-12 font-light tracking-wide">每一次探索，都更简单</p>
+      <div class="reveal flex flex-col sm:flex-row justify-center gap-5 mb-8">
+        <a class="bg-primary hover:bg-primaryDark text-white px-10 py-4 rounded-full text-lg font-medium shadow-[0_8px_30px_rgba(37,99,235,0.2)] hover:shadow-[0_12px_40px_rgba(37,99,235,0.3)] hover:-translate-y-1 transition-all duration-300" href="https://share.feijipan.com/s/ClvcwLwt" target="_blank" rel="noopener">立即下载</a>
+        <a class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-10 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:-translate-y-1" href="#team">认识官方团队</a>
+      </div>
+      <p class="reveal text-sm text-slate-400 tracking-wider">点击「立即下载」将直接跳转至官方下载页</p>
+    </section>
+
+    <!-- ===== 为什么选择小盒子 ===== -->
+    <section class="py-24 px-6 max-w-7xl mx-auto bg-white border-y border-slate-100">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">为什么选择小盒子？</h2>
+        <p class="text-slate-400 text-lg">强大到超乎想象，简单到有手就行</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="reveal bg-bgLight p-8 rounded-2xl border border-slate-100 hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center mb-6"><i data-lucide="rocket" class="w-6 h-6"></i></div>
+          <h3 class="text-xl font-bold mb-3">一键智能启动</h3>
+          <p class="text-slate-500 leading-relaxed text-sm">深度适配主流模拟器，智能启动，告别繁琐启动功能，一键启动游戏世界。</p>
+        </div>
+        <div class="reveal delay-100 bg-bgLight p-8 rounded-2xl border border-slate-100 hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 bg-indigo-50 text-indigo-500 rounded-xl flex items-center justify-center mb-6"><i data-lucide="unlock" class="w-6 h-6"></i></div>
+          <h3 class="text-xl font-bold mb-3">单机全皮肤/全英雄</h3>
+          <p class="text-slate-500 leading-relaxed text-sm">解锁英雄池，一键修改全皮肤、荣耀播报、按键皮肤，打造个性化对战体验。</p>
+        </div>
+        <div class="reveal delay-200 bg-bgLight p-8 rounded-2xl border border-slate-100 hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300">
+          <div class="w-12 h-12 bg-emerald-50 text-emerald-500 rounded-xl flex items-center justify-center mb-6"><i data-lucide="bot" class="w-6 h-6"></i></div>
+          <h3 class="text-xl font-bold mb-3">AI 驱动的 MCP 服务</h3>
+          <p class="text-slate-500 leading-relaxed text-sm">行业首创 MCP 脚本服务，支持 AI 查看、编辑、上传脚本，赋予创作无限可能。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 功能空间 ===== -->
+    <section class="py-24 px-6 max-w-7xl mx-auto bg-white border-b border-slate-100">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">功能空间</h2>
+        <p class="text-slate-400 text-lg">发现工具，把灵感变成作品。点击下方卡片可预览真实 UI。</p>
+      </div>
+      <div id="editor-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6"></div>
+    </section>
+
+    <!-- ===== AI MCP 服务 ===== -->
+    <section class="py-24 px-6 bg-white border-b border-slate-100">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">让 AI 成为你的脚本助理</h2>
+          <p class="text-slate-400 text-lg">行业首创 MCP 脚本服务，无缝接入 AI 工作流</p>
+        </div>
+        <div class="bg-[#F8FAFC] border border-slate-100 rounded-3xl p-8 md:p-12 space-y-8 reveal">
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center flex-shrink-0"><i data-lucide="server" class="w-6 h-6"></i></div>
+            <div><h4 class="text-lg font-bold mb-2 text-slate-900">随 App 启动 MCP 服务</h4><p class="text-slate-500 text-sm leading-relaxed">支持同机 127.0.0.1 及局域网连接，端口默认 8848，开启即用，无需复杂配置。</p></div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="w-12 h-12 bg-indigo-50 text-indigo-500 rounded-xl flex items-center justify-center flex-shrink-0"><i data-lucide="link" class="w-6 h-6"></i></div>
+            <div><h4 class="text-lg font-bold mb-2 text-slate-900">Streamable HTTP 传输</h4><p class="text-slate-500 text-sm leading-relaxed">提供海量脚本文档与备份目录，无缝接入 AI 工作流，让数据流转更高效。</p></div>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6 items-start">
+            <div class="w-12 h-12 bg-emerald-50 text-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0"><i data-lucide="code-2" class="w-6 h-6"></i></div>
+            <div><h4 class="text-lg font-bold mb-2 text-slate-900">AI 协同创作</h4><p class="text-slate-500 text-sm leading-relaxed">AI 查看、编辑、上传脚本，管理已发布的内容。你可以完全信任 AI 成为你日常开发的得力助手。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 卓越的创作者生态 ===== -->
+    <section class="py-24 px-6 max-w-5xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">卓越的创作者生态</h2>
+        <p class="text-slate-400 text-lg">从 Magisk 到实力小白，汇聚顶尖脚本作者，累计服务百万次下载！</p>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-100 shadow-[0_10px_30px_rgba(37,99,235,0.04)] overflow-hidden reveal">
+        <div class="grid grid-cols-3 bg-slate-50 p-5 text-sm font-semibold text-slate-500 border-b border-slate-100 text-center">
+          <span class="text-left pl-4">作者</span><span>脚本数</span><span>使用量</span>
+        </div>
+        <div class="divide-y divide-slate-50">
+          <!-- 1 -->
+          <div class="grid grid-cols-3 p-5 items-center text-center hover:bg-slate-50 transition-colors">
+            <span class="font-medium text-slate-800 flex items-center justify-start gap-3 pl-4 text-left whitespace-nowrap">
+              <span class="w-6 h-6 bg-blue-50 text-primary rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span> Magisk
+            </span>
+            <span class="text-slate-600">34</span><span class="font-semibold text-slate-800">639,760</span>
+          </div>
+          <!-- 2 -->
+          <div class="grid grid-cols-3 p-5 items-center text-center hover:bg-slate-50 transition-colors">
+            <span class="font-medium text-slate-800 flex items-center justify-start gap-3 pl-4 text-left whitespace-nowrap">
+              <span class="w-6 h-6 bg-red-50 text-red-500 rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span> 谪尘
+            </span>
+            <span class="text-slate-600">454</span><span class="font-semibold text-slate-800">543,050</span>
+          </div>
+          <!-- 3 -->
+          <div class="grid grid-cols-3 p-5 items-center text-center hover:bg-slate-50 transition-colors">
+            <span class="font-medium text-slate-800 flex items-center justify-start gap-3 pl-4 text-left whitespace-nowrap">
+              <span class="w-6 h-6 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span> 实力小白
+            </span>
+            <span class="text-slate-600">117</span><span class="font-semibold text-slate-800">448,074</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 加入我们 ===== -->
+    <section class="py-24 px-6 bg-white border-y border-slate-100">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">加入我们，共同探索</h2>
+          <p class="text-slate-400 text-lg">获取最新版本、脚本资源与官方技术支持</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="reveal bg-bgLight border border-slate-100 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300">
+            <div class="w-14 h-14 bg-blue-50 text-primary rounded-full flex items-center justify-center mb-5"><i data-lucide="message-square" class="w-6 h-6"></i></div>
+            <h4 class="text-lg font-bold mb-2 text-slate-900">企鹅群聊</h4>
+            <p class="text-slate-500 text-sm mb-6">交流反馈，获取第一手资源</p>
+            <div class="flex gap-2 w-full mt-auto">
+              <a href="mqqwpa://im/chat?chat_type=group&uin=971286108" class="flex-1 py-2 px-1 bg-white hover:bg-blue-50 text-slate-600 hover:text-primary border border-slate-200 hover:border-blue-200 rounded-lg text-xs font-medium transition-all duration-300 text-center cursor-pointer">一群</a>
+              <a href="mqqwpa://im/chat?chat_type=group&uin=1079144826" class="flex-1 py-2 px-1 bg-white hover:bg-blue-50 text-slate-600 hover:text-primary border border-slate-200 hover:border-blue-200 rounded-lg text-xs font-medium transition-all duration-300 text-center cursor-pointer">二群</a>
+              <a href="mqqwpa://im/chat?chat_type=group&uin=2156069092" class="flex-1 py-2 px-1 bg-white hover:bg-blue-50 text-slate-600 hover:text-primary border border-slate-200 hover:border-blue-200 rounded-lg text-xs font-medium transition-all duration-300 text-center cursor-pointer">三群</a>
+            </div>
+          </div>
+          <div onclick="copyChannel('20c1i264u1')" class="reveal delay-100 bg-bgLight border border-slate-100 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+            <div class="w-14 h-14 bg-indigo-50 text-indigo-500 rounded-full flex items-center justify-center mb-5 group-hover:bg-indigo-100 transition-colors"><i data-lucide="send" class="w-6 h-6"></i></div>
+            <h4 class="text-lg font-bold mb-2 text-slate-900">电报/企鹅频道</h4>
+            <p class="text-slate-500 text-sm mb-6">最新版本发布与更新通知</p>
+            <span class="text-xs text-indigo-500 font-medium bg-indigo-50 px-3 py-1.5 rounded-full mt-auto">点击复制频道号</span>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="reveal delay-200 bg-bgLight border border-slate-100 rounded-2xl p-8 flex flex-col items-center text-center hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+            <div class="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mb-5"><i data-lucide="clipboard-list" class="w-6 h-6"></i></div>
+            <h4 class="text-lg font-bold mb-2 text-slate-900">反馈中心</h4>
+            <p class="text-slate-500 text-sm">官方回复和处理进度一目了然</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 官方团队 ===== -->
+    <section id="team" class="py-24 px-6 max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl font-bold tracking-tight mb-3 text-slate-900">官方团队</h2>
+        <p class="text-slate-400">王者小盒子由这些成员在背后默默维护</p>
+      </div>
+      <div id="team-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 lg:gap-4"></div>
+    </section>
+
+    <!-- ===== 下载 ===== -->
+    <section id="download" class="py-24 px-6 bg-white border-t border-slate-100">
+      <div class="max-w-3xl mx-auto">
+        <div class="reveal bg-[#EBF3FF] rounded-[2rem] p-10 md:p-16 text-center text-slate-800 shadow-[0_20px_50px_rgba(37,99,235,0.08)] relative overflow-hidden border border-blue-200/60">
+          <div class="absolute -top-32 -right-32 w-80 h-80 bg-white/70 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="relative z-10 flex flex-col items-center">
+            <div class="h-16 flex items-center justify-center mb-8">
+              <img src="https://i.ibb.co/DHnBmgd4/0d5c975a-d245-4ed0-9360-7ddbd00c39f6.png" alt="王者小盒子" class="max-h-full max-w-[120px] object-contain hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'" />
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-slate-900">官方下载</h2>
+            <p class="text-slate-500 mb-10 font-light">点击下方按钮，前往官方下载页获取最新版本</p>
+            <a class="bg-primary hover:bg-primaryDark text-white px-10 py-4 rounded-full font-bold text-lg shadow-[0_10px_30px_rgba(37,99,235,0.2)] hover:shadow-[0_15px_40px_rgba(37,99,235,0.35)] hover:-translate-y-1 transition-all duration-300 tracking-wide" href="https://share.feijipan.com/s/ClvcwLwt" target="_blank" rel="noopener">立即下载</a>
+            <p class="text-xs text-slate-400 mt-6 tracking-wider">点击后跳转至极盘下载页，请认准官方网站 <a href="https://wzxhz.github.io/" class="hover:text-primary transition-colors">https://wzxhz.github.io/</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="bg-white text-slate-500 py-12 px-6 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
+        <div class="flex items-center gap-3 text-lg font-bold text-slate-900 tracking-tight">
+          <img src="https://i.ibb.co/DHnBmgd4/0d5c975a-d245-4ed0-9360-7ddbd00c39f6.png" alt="王者小盒子" class="w-7 h-7 object-contain hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'" />
+          <span>王者小盒子</span>
+        </div>
+        <ul class="flex gap-8 text-sm font-medium tracking-wide">
+          <li><a href="#home" class="hover:text-primary transition-colors duration-200">首页</a></li>
+          <li><a href="#team" class="hover:text-primary transition-colors duration-200">官方团队</a></li>
+          <li><a href="#download" class="hover:text-primary transition-colors duration-200">官方下载</a></li>
+        </ul>
+      </div>
+      <div class="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 tracking-wider gap-4">
+        <span>© <span id="year">2026</span> 王者小盒子 · 保留所有权利</span>
+        <span>每一次探索，都更简单</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== UI 预览弹窗 ===== -->
+  <div id="preview-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div class="bg-white rounded-3xl w-full max-w-3xl mx-4 overflow-hidden shadow-2xl transform transition-all duration-300 scale-95" id="modal-content">
+      <div class="flex justify-between items-center p-6 border-b border-slate-100 bg-slate-50/50">
+        <div class="flex items-center gap-3">
+          <div id="modal-icon" class="w-10 h-10 rounded-xl flex items-center justify-center"></div>
+          <h3 id="modal-title" class="text-xl font-bold text-slate-900">编辑器名称</h3>
+        </div>
+        <button onclick="closePreview()" class="w-10 h-10 flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors cursor-pointer"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="p-6 bg-bgLight relative">
+        <div class="w-full aspect-video bg-white rounded-2xl border border-slate-200 flex items-center justify-center overflow-hidden relative" id="modal-preview-container">
+          <img id="modal-image" src="" alt="UI预览" class="w-full h-full object-contain hidden" />
+          <div id="modal-placeholder" class="flex flex-col items-center gap-4">
+            <i data-lucide="image" class="w-12 h-12 text-slate-300"></i>
+            <p class="text-sm font-medium text-slate-500">图片加载失败</p>
+            <p class="text-xs text-slate-400 px-6 text-center">请检查该图片链接是否有效，确保外链能正常访问。</p>
+          </div>
+          <button id="prev-btn" onclick="changePreviewImage(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white text-slate-800 rounded-full shadow-md flex items-center justify-center cursor-pointer transition-all hidden"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+          <button id="next-btn" onclick="changePreviewImage(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white text-slate-800 rounded-full shadow-md flex items-center justify-center cursor-pointer transition-all hidden"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+          <div id="modal-indicator" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-slate-800/80 text-white text-xs px-3 py-1 rounded-full hidden">1 / 2</div>
+        </div>
+      </div>
+      <div class="p-6 pt-0 flex justify-between items-center">
+        <div id="thumbnail-container" class="flex gap-2"></div>
+        <button onclick="closePreview()" class="bg-primary hover:bg-primaryDark text-white px-8 py-3 rounded-full font-medium shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 cursor-pointer">我知道了</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-slate-800 text-white px-6 py-3 rounded-full text-sm shadow-xl opacity-0 transition-opacity duration-300 pointer-events-none z-[110]">频道号已复制</div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ==========================================
+    // 🎯 核心配置区：图片使用外链直链
+    // ==========================================
+    const editorData = [
+      { id: 'skin', name: '皮肤编辑器', icon: 'palette', color: 'text-blue-500', bg: 'bg-blue-50', images: ['https://i.ibb.co/Df6rw3DR/2271c4f2-1aac-4ad1-8020-111413a11d8c.webp', 'https://i.ibb.co/3K2TJvh/90bbb0d5-b1a6-4379-9b49-b634a7177fd7.webp'] },
+      { id: 'hero', name: '英雄编辑器', icon: 'sword', color: 'text-indigo-500', bg: 'bg-indigo-50', images: ['https://i.ibb.co/tM28SzTf/e5789fdf-fa31-4163-9d97-94c725a2b327.webp', 'https://i.ibb.co/qM6Kmnyw/e0f383e6-d503-40cf-85c9-460c36d1a6ef.webp'] },
+      { id: 'equip', name: '装备编辑器', icon: 'shield', color: 'text-blue-600', bg: 'bg-blue-100', images: ['https://i.ibb.co/vvV5hSX9/6658389a-3f4b-440d-8d73-d6310b3dd23b.webp', 'https://i.ibb.co/jZ9dtwKw/ad4bfee0-c8f3-497c-b36a-61d458804426.webp'] },
+      { id: 'bio', name: '生物编辑器', icon: 'ghost', color: 'text-purple-500', bg: 'bg-purple-50', images: ['https://i.ibb.co/dsGZcnnp/d5855768-f9e3-4cde-bb94-70e87e50f59b.webp'] },
+      { id: 'map', name: '地图编辑器', icon: 'map', color: 'text-emerald-500', bg: 'bg-emerald-50', images: ['https://i.ibb.co/vCr8NK1q/6b507a28-5921-4a92-928f-114faeafb9b1.webp', 'https://i.ibb.co/Pv1fm5QY/82ec2c68-38b9-476e-bcb3-e76348d53bff.webp'] },
+      { id: 'broadcast', name: '播报编辑器', icon: 'megaphone', color: 'text-red-500', bg: 'bg-red-50', images: ['https://i.ibb.co/Xk242ZzS/c0e14c73-adca-40ba-9558-b068fcb736b2.webp'] },
+      { id: 'key', name: '按键编辑器', icon: 'gamepad-2', color: 'text-pink-500', bg: 'bg-pink-50', images: ['https://i.ibb.co/wNX0rK3S/1b63f634-d8d0-4cc0-999d-3bdf738108f7.webp'] },
+      { id: 'effect', name: '效果编辑器', icon: 'sparkles', color: 'text-yellow-500', bg: 'bg-yellow-50', images: ['https://i.ibb.co/Sw3txX22/66db4392-4bfc-4f9c-9fed-852613309ff7.webp', 'https://i.ibb.co/b5MS6Hs5/449f8b50-73a8-4f3e-8feb-2a4e85827d6a.webp'] }
+    ];
+    // ==========================================
+
+    const editorGrid = document.getElementById('editor-grid');
+    editorData.forEach((editor) => {
+      const cardHTML = `
+        <div onclick="openPreview('${editor.id}')" class="reveal bg-bgLight border border-slate-100 p-6 rounded-2xl flex flex-col items-center text-center hover:bg-white hover:shadow-[0_15px_40px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+          <i data-lucide="${editor.icon}" class="w-8 h-8 ${editor.color} mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+          <h4 class="font-bold mb-1 text-sm md:text-base text-slate-800">${editor.name}</h4>
+        </div>
+      `;
+      editorGrid.innerHTML += cardHTML;
+    });
+
+    const staffData = [
+      { name: "鹿子零", role: "APP创始人/APP开发者", qq: "21745760" },
+      { name: "Migisk", role: "APP开发者/脚本作者", qq: "1932037099" },
+      { name: "🐟", role: "曾任脚本开发者/功能设计总监", qq: "1677680355" },
+      { name: "挽白", role: "大手子", qq: "3254638511" },
+      { name: "谪尘", role: "脚本作者", qq: "361082038" },
+      { name: "念世", role: "脚本作者", qq: "3235856064" },
+      { name: "念柿", role: "脚本作者", qq: "3944976240" },
+      { name: "念释", role: "脚本作者", qq: "3566833791" },
+      { name: "可小星", role: "脚本作者", qq: "2956466515" },
+      { name: "CHEEY", role: "脚本作者", qq: "2143063645" }
+    ];
+
+    const grid = document.getElementById('team-grid');
+    staffData.forEach((staff) => {
+      const avatarUrl = `https://q1.qlogo.cn/g?b=qq&nk=${staff.qq}&s=100`;
+      const firstChar = staff.name === "🐟" ? "鱼" : staff.name.charAt(0).toUpperCase();
+      const avatarHTML = `
+        <div class="relative w-12 h-12 mb-3">
+          <img src="${avatarUrl}" alt="${staff.name}" class="w-full h-full rounded-full object-cover bg-[#EBF3FF] absolute inset-0 z-10" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-full rounded-full bg-[#EBF3FF] text-primary hidden items-center justify-center text-base font-bold absolute inset-0 z-0">${firstChar}</div>
+        </div>
+      `;
+      const cardHTML = `
+        <article class="reveal bg-white p-5 rounded-xl border border-slate-100 flex flex-col items-center text-center hover:shadow-[0_10px_30px_rgba(37,99,235,0.06)] hover:border-primary/20 hover:-translate-y-1 transition-all duration-300">
+          ${avatarHTML}
+          <h3 class="font-semibold text-slate-800 text-sm mb-1">${staff.name}</h3>
+          <span class="text-[10px] text-slate-400 font-medium tracking-wider leading-tight">${staff.role}</span>
+        </article>
+      `;
+      grid.innerHTML += cardHTML;
+    });
+
+    lucide.createIcons();
+
+    setTimeout(() => {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('active'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+      reveals.forEach(reveal => observer.observe(reveal));
+    }, 0);
+
+    const modal = document.getElementById('preview-modal');
+    const modalContent = document.getElementById('modal-content');
+    const modalTitle = document.getElementById('modal-title');
+    const modalIcon = document.getElementById('modal-icon');
+    const modalImage = document.getElementById('modal-image');
+    const modalPlaceholder = document.getElementById('modal-placeholder');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const indicator = document.getElementById('modal-indicator');
+    const thumbnailContainer = document.getElementById('thumbnail-container');
+
+    let currentEditor = null;
+    let currentImageIndex = 0;
+
+    function openPreview(id) {
+      currentEditor = editorData.find(e => e.id === id);
+      if (!currentEditor) return;
+      modalTitle.textContent = currentEditor.name;
+      modalIcon.className = `w-10 h-10 rounded-xl flex items-center justify-center ${currentEditor.bg} ${currentEditor.color}`;
+      modalIcon.innerHTML = `<i data-lucide="${currentEditor.icon}" class="w-5 h-5"></i>`;
+      currentImageIndex = 0;
+      updatePreviewImage();
+      modal.classList.remove('hidden'); modal.classList.add('flex');
+      void modal.offsetWidth;
+      modal.classList.remove('opacity-0');
+      modalContent.classList.remove('scale-95'); modalContent.classList.add('scale-100');
+      document.body.classList.add('no-scroll');
+      lucide.createIcons();
+    }
+
+    function updatePreviewImage() {
+      if (!currentEditor || !currentEditor.images || currentEditor.images.length === 0) {
+        modalImage.classList.add('hidden'); modalPlaceholder.style.display = 'flex'; return;
+      }
+      const imgSrc = currentEditor.images[currentImageIndex];
+      modalImage.src = imgSrc;
+      modalPlaceholder.style.display = 'none';
+      
+      modalImage.onerror = function() {
+        this.classList.add('hidden');
+        modalPlaceholder.style.display = 'flex';
+      };
+      modalImage.onload = function() {
+        this.classList.remove('hidden');
+        modalPlaceholder.style.display = 'none';
+      };
+
+      if (currentEditor.images.length > 1) {
+        prevBtn.classList.remove('hidden'); nextBtn.classList.remove('hidden'); indicator.classList.remove('hidden');
+        indicator.textContent = `${currentImageIndex + 1} / ${currentEditor.images.length}`;
+        thumbnailContainer.innerHTML = '';
+        currentEditor.images.forEach((img, idx) => {
+          const dot = document.createElement('div');
+          dot.className = `w-2 h-2 rounded-full cursor-pointer transition-colors ${idx === currentImageIndex ? 'bg-primary' : 'bg-slate-300'}`;
+          dot.onclick = () => { currentImageIndex = idx; updatePreviewImage(); };
+          thumbnailContainer.appendChild(dot);
+        });
+      } else {
+        prevBtn.classList.add('hidden'); nextBtn.classList.add('hidden'); indicator.classList.add('hidden'); thumbnailContainer.innerHTML = '';
+      }
+    }
+
+    function changePreviewImage(direction) {
+      if (!currentEditor || !currentEditor.images || currentEditor.images.length <= 1) return;
+      currentImageIndex += direction;
+      if (currentImageIndex < 0) currentImageIndex = currentEditor.images.length - 1;
+      if (currentImageIndex >= currentEditor.images.length) currentImageIndex = 0;
+      updatePreviewImage();
+    }
+
+    function closePreview() {
+      modal.classList.add('opacity-0');
+      modalContent.classList.remove('scale-100'); modalContent.classList.add('scale-95');
+      setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.classList.remove('no-scroll'); }, 300);
+    }
+
+    modal.addEventListener('click', (e) => { if (e.target === modal) closePreview(); });
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closePreview();
+      else if (e.key === 'ArrowLeft') changePreviewImage(-1);
+      else if (e.key === 'ArrowRight') changePreviewImage(1);
+    });
+
+    function copyChannel(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => showToast('频道号已复制：' + text)).catch(() => fallbackCopyTextToClipboard(text));
+      } else { fallbackCopyTextToClipboard(text); }
+    }
+    function fallbackCopyTextToClipboard(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text; textArea.style.position = "fixed"; document.body.appendChild(textArea); textArea.focus(); textArea.select();
+      try { document.execCommand('copy'); showToast('频道号已复制：' + text); } catch (err) { console.error('复制失败', err); }
+      document.body.removeChild(textArea);
+    }
+    let toastTimer;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message; toast.style.opacity = '1';
+      clearTimeout(toastTimer); toastTimer = setTimeout(() => { toast.style.opacity = '0'; }, 2500);
+    }
+  </script>
+</body>
+</html>
